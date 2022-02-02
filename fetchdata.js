@@ -7,7 +7,7 @@ generateDataBtn.addEventListener('click', e => {
     .post('https://jsmethod.com/lorem', {
       sentencesQuantity: 20
     })
-    .then(res => (textarea.textContent = res.data.lorem))
+    .then(res => (textarea.value = res.data.lorem))
     .catch(err => console.log(err));
   axios
     .post('https://jsmethod.com/lorem', {
